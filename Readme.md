@@ -11,7 +11,7 @@ image url: https://hub.docker.com/repository/docker/morgotq/custom-nginx/general
 1-3)docker attach 
 ![img_1.png](img_1.png)
 ![img_2.png](img_2.png)
-docker attach custom-nginx-t2 - команда подключает нас к процессу с PID(1) внутри контейнера (это init). CTRL-C отправляет сигнал на прерывание этому процессу (SIGINT). После обработки сигнала контейнер останавливается, так как без init контейнер не может работать.
+docker attach custom-nginx-t2 - команда подключает нас к процессу с nginx внутри контейнера. CTRL-C отправляет сигнал на прерывание этому процессу (SIGINT). После обработки сигнала контейнер останавливается.
 
 4-10)
 ![img_3.png](img_3.png)
