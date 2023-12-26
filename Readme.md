@@ -50,7 +50,7 @@ docker rm -f 'id/name'
 
 Каноническое имя для docker-compose файла - compose.yaml/yml.
 Также поддерживается docker-compose.yaml/yml
-Если в каталоге два таких файла, будет выбрат compose.yaml.yml по-умолчанию.
+Если в каталоге два таких файла, будет выбран compose.yaml.yml по-умолчанию.
 
 ![img_12.png](img_12.png)
 Добавил директиву include в compose.yaml, чтобы запустилось два компоуз файла.
