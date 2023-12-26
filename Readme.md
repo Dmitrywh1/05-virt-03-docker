@@ -43,3 +43,33 @@ docker rm -f 'id/name'
 
 ![img_10.png](img_10.png)
 Проверка файлов и содержимое
+
+Задание 5.
+
+![img_11.png](img_11.png)
+
+Каноническое имя для docker-compose файла - compose.yaml/yml.
+Также поддерживается docker-compose.yaml/yml
+Если в каталоге два таких файла, будет выбрат compose.yaml.yml по-умолчанию.
+
+![img_12.png](img_12.png)
+Добавил директиву include в compose.yaml, чтобы запустилось два компоуз файла.
+
+![img_13.png](img_13.png)
+Выполнил docker-compose up -d - два файла конфигурации успешно исполнились и запущено два контейнера.
+
+
+![img_15.png](img_15.png)
+push в локальный registry 
+
+
+![img_14.png](img_14.png)
+inspect local-nginx container
+
+![img_16.png](img_16.png)
+Удалил compose.yaml. Появилось предупреждение о сиротских контейнерах, которые раньше были использованы в компоуз файле.
+Рекомендовано использовать docker-compose up -d --remove-orphans для remove сиротских контейнеров.
+
+![img_17.png](img_17.png)
+Исполнил docker-compose up -d --remove-orphans, сиротский контейнер потух, остался один, который прописан в манифесте.
+Потушил остальные контейнеры.
